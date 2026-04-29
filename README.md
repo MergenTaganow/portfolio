@@ -1,22 +1,8 @@
-# Modern Portfolio Template 🚀
+# Mergen Taganov Portfolio
 
-A sleek, modern portfolio template built with React, Vite, and Framer Motion. This template features a stunning black and white design with smooth animations and a polished user interface.
+Personal portfolio project for Mergen Taganov, focused on Flutter, cross-platform mobile products, case studies, achievements, and professional contact information.
 
-## ✨ Features
-
-- 🎨 Minimalist black and white design
-- ⚡ Built with React + Vite for lightning-fast performance
-- 🎭 Smooth animations powered by Framer Motion
-- 📱 Fully responsive design
-- 🌙 Dark mode optimized
-- 🎯 SEO friendly
-- 🚀 Modern development practices
-- 📝 Blog section included
-- 💼 Project showcase
-- 📬 Contact form
-- 🔍 Easy to customize
-
-## 🛠️ Tech Stack
+## Stack
 
 - React
 - Vite
@@ -25,61 +11,42 @@ A sleek, modern portfolio template built with React, Vite, and Framer Motion. Th
 - Framer Motion
 - Lucide Icons
 
-## 🚀 Getting Started
+## Local development
 
-1. Clone the repository:
-```bash
-git clone https://github.com/Resorcinolworks/PortfolioTemplate.git
-```
+1. Install dependencies:
 
-2. Install dependencies:
 ```bash
-cd PortfolioTemplate
 npm install
 ```
 
-3. Start the development server:
+2. Start the dev server:
+
 ```bash
 npm run dev
 ```
 
-4. Build for production:
+3. Build for production:
+
 ```bash
 npm run build
 ```
 
-## 🎨 Customization
+## Content structure
 
-1. Update personal information in the configuration files
-2. Modify the color scheme in `tailwind.config.js`
-3. Add your projects in the projects section
-4. Customize animations in the components
-5. Add your blog posts in the blog section
+- Portfolio data: `src/data/portfolio.ts`
+- Main page: `src/pages/Index.tsx`
+- Product dialogs: `src/components/ProjectsSection.tsx`
+- Achievements and certificate links: `src/components/AchievementsSection.tsx`
+- Contact section: `src/components/ContactSection.tsx`
 
-## 🤝 Contributing
+## Assets
 
-Contributions are welcome! Feel free to open an issue or submit a pull request.
+- Profile image: `public/profile/mergen-taganov.jpg`
+- Resume PDF: `public/resume.pdf`
+- Certificate scans: `public/certificates/`
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## Notes
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [React](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Lucide Icons](https://lucide.dev/)
-
----
-
-Made with ❤️ by [Ayush Raghuvanshi](https://github.com/Resorcinolworks)
-
-Feel free to star ⭐ this repository if you find it useful!
+- Product case studies are rendered from structured data in `src/data/portfolio.ts`.
+- Certificate files should use the exact names listed in `public/certificates/README.md`.
+- The contact form currently uses the visitor's email app via `mailto:` and does not send mail directly from a backend service.
